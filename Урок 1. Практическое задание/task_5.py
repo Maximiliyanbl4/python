@@ -29,5 +29,7 @@ if revenue > loss:
     headcount = int(input("Введите численность сотрудников фирмы:"))
     employee = float(net_income / headcount)
     print("Прибыль фирмы в расчете на одного сотрудника = ", employee)
+elif revenue == loss:
+    print("Фирма работает не в убыток и не в прибыль")
 else:
     print("Фирма работает в убыток")
