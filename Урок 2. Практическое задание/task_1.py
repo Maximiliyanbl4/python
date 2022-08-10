@@ -17,6 +17,5 @@
 """
 
 el_list = [7, [5, 7], 4 / 9, True, None]
-for i in range(len(el_list)):
-    print(f"Type {type(el_list[i])}")
-
+for el in el_list:
+    print(f"Type {type(el)}")
