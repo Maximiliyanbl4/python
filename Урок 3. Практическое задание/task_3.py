@@ -7,12 +7,19 @@
 """
 
 
+def max_num(*args):
+    print(sum(sorted(list(args), reverse=True)[:2]))
+
+
+max_num(23, 65, 34)
+
+
 def my_func(a, b, c):
-    if (a + b) > (a + c) and (a + b) > (b + c):
+    if a + b > a + c and a + b > b + c:
         return a + b
-    if (a + c) > (a + b) and (a + c) > (b + c):
+    if a + c > a + b and a + c > b + c:
         return a + c
-    if (b + c) > (a + b) and (b + c) > (a + c):
+    if b + c > a + b and b + c > a + c:
         return b + c
 
 
