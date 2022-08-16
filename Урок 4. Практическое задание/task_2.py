@@ -9,14 +9,14 @@
 """
 
 # без генератора:
-list = [234, 43, 2764, 234, 21, 1, 5, 4, 12, 3, 13, 45]
+init_list = [234, 43, 2764, 234, 21, 1, 5, 4, 12, 3, 13, 45]
 result = []
-for i in range(0, len(list)):
-    if list[i] > list[i - 1]:
-        (result.append(list[i]))
+for i in range(0, len(init_list)):
+    if init_list[i] > init_list[i - 1]:
+        (result.append(init_list[i]))
 print(f"Список элементов: {result}")
 
 # с генератором:
 
-my_new_list = [list[el] for el in range(0, len(list)) if list[el - 1] < list[el]]
+my_new_list = [init_list[i] for i in range(0, len(init_list)) if init_list[i - 1] < init_list[i]]
 print(f"Cписок элементов: {my_new_list}")
