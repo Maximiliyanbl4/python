@@ -8,6 +8,6 @@
 
 from functools import reduce
 
-list = [i for i in range(100, 1001, 2)]
-print("Диапазоне четных чисел от 100 до 1000:\n", list)
-print("Сумма элементов списка:\n", reduce(lambda a, b: a * b, list))
+initial_list = [i for i in range(100, 1001, 2)]
+print("Диапазоне четных чисел от 100 до 1000:\n", initial_list)
+print("Сумма элементов списка:\n", reduce(lambda a, b: a * b, initial_list))

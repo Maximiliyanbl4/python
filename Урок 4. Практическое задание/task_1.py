@@ -14,4 +14,4 @@ name, output_per_hour, rate_per_hour, bonus = argv
 print("Выработка в часах: ", output_per_hour)
 print("Ставка в час: ", rate_per_hour)
 print("Премия: ", bonus)
-print(f"Зарплата сотрудника: {(float(output_per_hour) * float(rate_per_hour)) + float(bonus)}")
+print(f"Зарплата сотрудника: {float(output_per_hour) * float(rate_per_hour) + float(bonus)}")

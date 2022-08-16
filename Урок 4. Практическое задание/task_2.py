@@ -18,6 +18,5 @@ print(f"Список элементов: {result}")
 
 # с генератором:
 
-my_list = [345, 3, 6, 2, 4, 456, 34, 631, 4, 1, 73, 576, 132, 40]
-my_new_list = [el for num, el in enumerate(my_list) if my_list[num - 1] < my_list[num]]
+my_new_list = [list[el] for el in range(0, len(list)) if list[el - 1] < list[el]]
 print(f"Cписок элементов: {my_new_list}")
