@@ -17,7 +17,7 @@
 
 Подсказка: использовать менеджер контекста.
 """
-
+# 7e
 import json
 
 with open("data_file7.txt", "r", encoding="UTF-8") as df:
