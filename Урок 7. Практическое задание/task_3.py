@@ -110,8 +110,8 @@ class Cell:
         return f"Действие сложение, клеток стало: {self.quantity + other.quantity}"
 
     def __sub__(self, other):
-        sub = self.quantity - other.quantity
-        return f"Действие вычитание, клеток стало меньше и равно: {sub} " if sub > 0 else "Клетки исчезли :("
+        diff = self.quantity - other.quantity
+        return f"Действие вычитание, клеток стало меньше и равно: {diff} " if diff > 0 else "Клетки исчезли :("
 
     def __truediv__(self, other):
         return f"Действие деление, клеток стало очень мало :( : {self.quantity // other.quantity}"
@@ -124,14 +124,14 @@ class Cell:
         for i in range(int(self.quantity / row)):
             res += "*" * row + "\n"
         res += "*" * (self.quantity % row) + "\n"
-        return result
+        return res
 
 
-cell = Cell(24)
-cell_2 = Cell(2)
-print(cell + cell_2)
-print(cell - cell_2)
-print(cell / cell_2)
-print(cell * cell_2)
+cage = Cell(15)
+cage2 = Cell(5)
+print(cage + cage2)
+print(cage - cage2)
+print(cage / cage2)
+print(cage * cage2)
 print("\nМетод make_order():")
-print(cell.make_order(7))
+print(cage.make_order(5))
