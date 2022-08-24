@@ -51,11 +51,7 @@ class Matrix:
 a = Matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 b = Matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-print("\nПервая матрица:")
-print(a.__str__(), "\n")
-
-print("Вторая матрица:")
-print(b.__str__(), "\n")
-
+print(a)
+print(b)
 print("Сумма матриц:")
-print(a.__add__(b))
+print(a + b)
