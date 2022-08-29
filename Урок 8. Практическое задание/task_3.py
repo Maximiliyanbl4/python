@@ -16,7 +16,7 @@ class ClassExcept(Exception):
         self.data = data
 
 
-def Check_content_list(str):
+def CheckContentList(str):
     if str.isdigit():
         return str
     else:
@@ -34,7 +34,7 @@ print("Ввод числа по одному:")
 while numm != "q":
     try:
         numm = input("- ")
-        list_num.append(Check_content_list(numm))
+        list_num.append(CheckContentList(numm))
     except ClassExcept as i:
         if numm != "q":
             print(i.data)
